@@ -28,7 +28,7 @@ public class DarkForest implements Runnable {
 
     private void createMonster() {
         int randomizeEnemy = getRandInt(3, 1);
-        System.out.println("Появляется монстр!");
+        System.out.println("Monster!");
         try {
             if (randomizeEnemy <= 1) {
                 enemy = Skeleton.Builder.newInstance().setName("Skeleton").setHealth(80).setAgility(5).setStrength(5).build();
@@ -76,10 +76,9 @@ public class DarkForest implements Runnable {
             hero.addGold(receivedGold);
             hero.addExperience(receivedExp);
             result = "Gold: " + receivedGold + " , and exp: " + receivedExp + "\n";
-            result += "Подожди, закапываем монстра, считаем золото..";
 
         } else if (enemy.getHealth() > 0 && hero.getHealth() <= 0) {
-            result = "Герой мертв, нажмите любую кнопку для выхода.";
+            result = "The hero is dead, press any button to exit.";
             game.setExit();
             hero.setDead();
         }

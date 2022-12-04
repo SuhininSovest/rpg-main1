@@ -1,4 +1,4 @@
-public class Trader {
+public class Market {
 
     Hero hero;
 

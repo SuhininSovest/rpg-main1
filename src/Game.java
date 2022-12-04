@@ -130,7 +130,7 @@ public class Game {
         int result = scanner.nextInt();
         switch (result) {
             case 1:
-                Trader.buyPotion(hero);
+                Market.buyPotion(hero);
                 printTraderMenu();
                 break;
             case 2:
