@@ -12,7 +12,7 @@ public class DarkForest implements Runnable {
     DarkForest(Hero hero, Game game) {
         this.game = game;
         this.hero = hero;
-        levelUpListener = new Thread(new LevelUpListener(hero));
+        levelUpListener = new Thread(new LevelUp(hero));
         levelUpListener.start();
     }
 
@@ -76,7 +76,7 @@ public class DarkForest implements Runnable {
             hero.addGold(receivedGold);
             hero.addExperience(receivedExp);
             result = "Gold: " + receivedGold + " , and exp: " + receivedExp + "\n";
-            result += "Подожди, закапываем монстра, считаем золото...";
+            result += "Подожди, закапываем монстра, считаем золото..";
 
         } else if (enemy.getHealth() > 0 && hero.getHealth() <= 0) {
             result = "Герой мертв, нажмите любую кнопку для выхода.";

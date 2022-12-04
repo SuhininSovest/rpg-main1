@@ -60,7 +60,7 @@ public abstract class Creature {
         StringBuilder result = new StringBuilder();
         boolean hit = this.getAgility() * 3 >= randomResist - this.getAgility();
         System.out.print(" attacks!");
-        System.out.println("RR = " + randomResist);
+        System.out.println("RR =  " + randomResist);
         if (hit) {
             System.out.println("Hit! ");
             boolean criticalHit = this.getAgility() * 3 <= randomResist + 5;

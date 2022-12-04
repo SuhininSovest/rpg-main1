@@ -70,7 +70,7 @@ public class Hero extends Creature {
 
     @Override
     public void attack(Creature enemy, int randomResist) {
-        System.out.print("Hero " + getHealth());
+        System.out.print("Hero  " + getHealth());
         super.attack(enemy, randomResist);
     }
 

@@ -11,9 +11,9 @@ public class Game {
     private static String stats;
     private final String MAINMENU =
             """
-                    1. К торговцу
-                    2. В Темный Лес
-                    3. На выход
+                    1. К торговцу.
+                    2. В Темный Лес.
+                    3. На выход.
                     """;
     public final String DARKFORESTMENU =
             """

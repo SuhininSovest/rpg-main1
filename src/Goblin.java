@@ -52,7 +52,7 @@ public class Goblin extends Creature {
 
     @Override
     public void attack(Creature enemy, int randomResist) {
-        System.out.print("Goblin ");
+        System.out.print("Goblin");
         super.attack(enemy, randomResist);
     }
 }

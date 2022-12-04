@@ -1,9 +1,9 @@
-public class LevelUpListener implements Runnable {
+public class LevelUp implements Runnable {
 
     Hero hero;
     int baseExp;
 
-    public LevelUpListener(Hero hero) {
+    public LevelUp(Hero hero) {
         this.hero = hero;
     }
 
